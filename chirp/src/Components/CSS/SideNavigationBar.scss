@@ -1,0 +1,10 @@
+.navigationBar{
+    width: 25%;
+    background-color: aqua;
+}
+
+.navigationBar > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
