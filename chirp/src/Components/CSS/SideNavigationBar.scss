@@ -1,10 +1,31 @@
-.navigationBar{
-    width: 25%;
-    background-color: aqua;
+$textHoverColor: #1DA1F2;
+$textHoverBackground: rgba($textHoverColor, 0.1);
+
+
+
+.leftSide{
+    width:50%;
+    display: flex;
+    background-color: red;
 }
 
-.navigationBar > div{
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.navigationBar{
+    margin-left: auto;
+    width: 50%;
+    background-color: white;
+    div>div{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        *{
+            margin: 0px 10px;
+        }
+        &:hover{
+            border-radius: 30px;
+            width: inline;
+            color: $textHoverColor;
+            background-color: $textHoverBackground;
+        }
+    }
 }
+

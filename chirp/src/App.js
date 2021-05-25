@@ -1,12 +1,16 @@
 
 import './App.css';
 import SideNavigationBar from "./Components/SideNavigationBar"
+import MainContent from "./Components/MainContent/MainContent"
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Temp</h1>
       <SideNavigationBar/>
+
+      <MainContent/>
+      
 
     </div>
   );

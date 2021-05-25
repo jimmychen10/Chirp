@@ -1,0 +1,36 @@
+.composeBox{
+    display: flex;
+    width: 598px;
+    border: 1px lightblue solid;
+    div{
+        display: inline;
+    }
+    &_img{
+        width: 48px;
+        img{
+            width: 100%;
+        }
+    }
+    &_form{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        &_input{
+            // width: 1000px;
+            height: inline;
+            width: auto;
+            padding: 12px 0px;
+            font-size: large;
+            outline: none;
+        }
+        &_button{
+            float: right;
+            border-radius: 30px;
+        }
+    }
+}
+// .composeBox_input{
+//     // width: 1000px;
+//     height: 500px;
+// }
+
