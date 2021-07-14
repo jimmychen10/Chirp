@@ -11,9 +11,13 @@ $buttonColor: rgb(29, 161, 242);
     &_img{
         padding-top: 4px;
         margin-right: 12px;
-        width: 54px;
+        
+        
         img{
-            width: 100%;
+            object-fit: cover;
+            width: 54px;
+            height: 54px;
+            // width: 100%;
             border-radius: 50%;
         }
     }
@@ -26,6 +30,7 @@ $buttonColor: rgb(29, 161, 242);
             height: inline;
             width: auto;
             max-width: 506px;
+            max-height: 96px;
             padding: 12px 0px;
             font-size: large;
             outline: none;

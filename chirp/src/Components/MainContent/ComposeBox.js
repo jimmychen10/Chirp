@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button';
 import "../CSS/ComposeBox.scss"
 import ContentEditable from 'react-contenteditable'
 
+import Image from "../../Pics/jimmy pic.jpg"
+
 
 export default function ComposeBox() {
 
@@ -11,10 +13,10 @@ export default function ComposeBox() {
     return (
         <div className = "composeBox">
             <div className = "composeBox_img">
-                <img src = "https://media-exp1.licdn.com/dms/image/C5635AQFslHsPwzfOiQ/profile-framedphoto-shrink_200_200/0/1608499210095?e=1622001600&v=beta&t=nFrjUcUfuPUeZol_rL_2d8iSLAbvXF86OKi0ASLnPwA"/>
+                <img src ={Image} />
             </div>
             
-            <div className = "composeBox_form">
+    
                 
                 {/* <TextField
                     // label="Multiline Placeholder"
@@ -45,7 +47,7 @@ export default function ComposeBox() {
                         {/* <Button variant="outlined" className="composeBox_form_bottom_button" borderRadius="50%"><h2>button</h2></Button> */}
                         <div className="composeBox_form_bottom_button">
                             <span>
-                                <b>Chirp</b>
+                                <Button variant="contained" className="composeBox_form_bottom_button" color = "default"><b>Chirp</b></Button>
                                 
                             </span>
                         </div>
@@ -55,6 +57,5 @@ export default function ComposeBox() {
 
             </div>
 
-        </div>
     )
 }
